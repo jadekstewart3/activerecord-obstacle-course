@@ -20,20 +20,18 @@ describe 'ActiveRecord Obstacle Course, Week 5' do
     expected_result = ['Abercrombie', 'Banana Republic', 'Calvin Klein', 'Dickies', 'Eddie Bauer', 'Fox', 'Giorgio Armani', 'Izod', 'J.crew']
 
     # ----------------------- Using Ruby -------------------------
-    items = Item.all
+    # items = Item.all
 
-    ordered_items = items.map do |item|
-      item if item.orders.present?
-    end.compact
+    # ordered_items = items.map do |item|
+    #   item if item.orders.present?
+    # end.compact
 
-    ordered_items_names = ordered_items.map(&:name)
-    ordered_items_names.sort
+    # ordered_items_names = ordered_items.map(&:name)
+    # ordered_items_names.sort
     # ------------------------------------------------------------
 
     # ------------------ ActiveRecord Solution ----------------------
-    # Solution goes here
-    # When you find a solution, experiment with adjusting your method chaining.
-    # Which ones are you able to switch around without relying on Ruby's Enumerable methods?
+    require 'pry'; binding.pry
     # ---------------------------------------------------------------
 
     # Expectations
